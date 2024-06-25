@@ -4,12 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const popup = document.getElementById('popup');
 
     openPopupBtn.addEventListener('click', function () {
-        popup.classList.toggle('active');
-        openPopupBtn.classList.add('hidden');
+        popup.classList.add('active');
     });
 
     closePopupBtn.addEventListener('click', function () {
         popup.classList.remove('active');
-        openPopupBtn.classList.remove('hidden');
     });
 });
