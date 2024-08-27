@@ -1,8 +1,8 @@
-{% extends "base.html" %}
+{% extends "base_with_sidebar.html" %}
 
 {% block title %}Profile{% endblock %}
 
 {% block content %}
-<h1>Welcome, {{ username }}!</h1>
+<h2>Welcome, {{ session['username'] }}!</h2>
 <p>This is your profile page.</p>
 {% endblock %}
